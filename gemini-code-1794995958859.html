@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les bases de l'informatique — info.tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a class="brand" href="index.html"><span class="brand-dot"></span><span>info<span class="accent">.tech</span></span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tutoriels.html">Tutoriels</a></li>
+        <li><a href="bases.html" class="active">Les bases</a></li>
+        <li><a href="coder.html">Coder</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#quiz" class="btn btn-primary">Aller au quiz</a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Comprendre sa machine</p>
+        <h1>Les bases de l'informatique, sans jargon</h1>
+        <p>Quatre piliers pour comprendre ce qui se passe derrière votre écran.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>1. Le Matériel (Hardware)</h3>
+          <p><strong>Processeur (CPU) :</strong> le cerveau qui exécute les calculs.<br>
+          <strong>Mémoire vive (RAM) :</strong> le bureau temporaire où s'ouvrent vos logiciels.<br>
+          <strong>Stockage (SSD) :</strong> l'armoire où vos fichiers restent enregistrés.</p>
+        </article>
+
+        <article class="card">
+          <h3>2. Le Système d'exploitation (OS)</h3>
+          <p>Windows, macOS ou Linux : c'est le chef d'orchestre qui fait le lien entre vous, vos logiciels et les composants matériels de l'ordinateur.</p>
+        </article>
+
+        <article class="card">
+          <h3>3. Internet et le Web</h3>
+          <p><strong>Internet</strong> est le réseau mondial de câbles et de serveurs. Le <strong>Web</strong> est l'ensemble des pages que vous consultez via un navigateur (Chrome, Firefox, Edge).</p>
+        </article>
+      </div>
+
+      <!-- QUIZ INTERACTIF -->
+      <section id="quiz" class="quiz-box">
+        <p class="eyebrow">Évaluation rapide</p>
+        <h2>Tester mes connaissances</h2>
+        <form id="quiz-form">
+          <div class="quiz-question">
+            <p><strong>1. Quel raccourci permet d'ouvrir directement le Gestionnaire des tâches ?</strong></p>
+            <label><input type="radio" name="q1" value="a"> Ctrl + C</label>
+            <label><input type="radio" name="q1" value="b"> Ctrl + Maj + Échap</label>
+            <label><input type="radio" name="q1" value="c"> Windows + D</label>
+          </div>
+
+          <div class="quiz-question">
+            <p><strong>2. Quel composant conserve vos fichiers même lorsque le PC est éteint ?</strong></p>
+            <label><input type="radio" name="q2" value="a"> La mémoire vive (RAM)</label>
+            <label><input type="radio" name="q2" value="b"> Le disque de stockage (SSD)</label>
+            <label><input type="radio" name="q2" value="c"> L'écran</label>
+          </div>
+
+          <div class="quiz-question">
+            <p><strong>3. Quel format de nommage trie automatiquement vos fichiers par date ?</strong></p>
+            <label><input type="radio" name="q3" value="a"> facture_14_mars.pdf</label>
+            <label><input type="radio" name="q3" value="b"> 2026-03-14_facture.pdf</label>
+            <label><input type="radio" name="q3" value="c"> document_final_2.pdf</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Vérifier mes réponses</button>
+        </form>
+        <div id="quiz-result" class="quiz-result" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">© 2026 info.tech — Apprendre l'informatique, sans jargon.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

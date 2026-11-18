@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apprendre à coder — info.tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a class="brand" href="index.html"><span class="brand-dot"></span><span>info<span class="accent">.tech</span></span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tutoriels.html">Tutoriels</a></li>
+        <li><a href="bases.html">Les bases</a></li>
+        <li><a href="coder.html" class="active">Coder</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="bases.html#quiz" class="btn btn-primary">Tester mes connaissances</a>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Initiation pratique</p>
+        <h1>Écrivez vos premières lignes de code</h1>
+        <p>Modifiez le code HTML ci-dessous et observez le résultat en temps réel à droite.</p>
+      </div>
+
+      <div class="playground">
+        <div class="editor-pane">
+          <div class="pane-header">Éditeur HTML / CSS</div>
+          <textarea id="code-editor" spellcheck="false"><style>
+  body { font-family: sans-serif; padding: 20px; background: #f8fafc; }
+  h1 { color: #2563eb; }
+  button { background: #2563eb; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; }
+</style>
+
+<h1>Bonjour info.tech !</h1>
+<p>Ceci est ma toute première page web.</p>
+<button onclick="alert('Bravo, votre JavaScript fonctionne !')">Cliquez ici</button></textarea>
+        </div>
+
+        <div class="preview-pane">
+          <div class="pane-header">Résultat en direct</div>
+          <iframe id="code-preview" title="Aperçu du code"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">© 2026 info.tech — Apprendre l'informatique, sans jargon.</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>info.tech — Votre ordinateur, enfin simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Navigation principale">
+      <a class="brand" aria-label="info.tech, retour à l'accueil" href="index.html">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>info<span class="accent">.tech</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="tutoriels.html">Tutoriels</a></li>
+        <li><a href="bases.html">Les bases</a></li>
+        <li><a href="coder.html">Coder</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="bases.html#quiz" class="btn btn-primary">Tester mes connaissances</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">✨ Astuces, bases et codage au même endroit</span>
+          <h1>Votre ordinateur, <span class="accent">enfin simple</span>.</h1>
+          <p class="hero-subtitle">Des astuces concrètes pour aller plus vite sur PC, les bases de l'informatique expliquées pas à pas et une initiation au code pour les vrais débutants.</p>
+          
+          <dl class="hero-stats">
+            <div>
+              <dt>Tutoriels</dt>
+              <dd>14</dd>
+            </div>
+            <div>
+              <dt>Parcours</dt>
+              <dd>3</dd>
+            </div>
+            <div>
+              <dt>Accès</dt>
+              <dd>Gratuit</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-window" aria-hidden="true">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">info.tech — aide</span>
+          </div>
+          <div class="window-body">
+            <p class="code-line"><span class="prompt">$</span> bienvenue sur info.tech</p>
+            <p class="code-line">✔ Raccourcis clavier maîtrisés</p>
+            <p class="code-line">✔ Fichiers organisés par date</p>
+            <p class="code-line">✔ Première page HTML créée en 20 min</p>
+            <div class="window-tip">
+              <strong>Astuce rapide :</strong> Appuyez sur <kbd>Windows</kbd> + <kbd>E</kbd> pour ouvrir instantanément vos dossiers.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Par où commencer ?</p>
+          <h2>Trois parcours, une seule progression</h2>
+          <p>Commencez par les gestes du quotidien, comprenez ensuite comment fonctionne une machine, puis écrivez vos premières lignes de code.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Astuces PC</h3>
+            <p>Raccourcis clavier, rangement des fichiers, PC qui ralentit : les gestes qui changent le quotidien.</p>
+            <a href="tutoriels.html?cat=Astuces+PC" class="card-link">Voir les astuces →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">🖥️</div>
+            <h3>Bases de l'informatique</h3>
+            <p>Matériel, système d'exploitation, fichiers, Internet et sécurité : comprendre comment tout fonctionne.</p>
+            <a href="bases.html" class="card-link">Découvrir les bases →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3>Apprendre à coder</h3>
+            <p>HTML, CSS, JavaScript : écrire ses premières lignes et les voir s'exécuter immédiatement.</p>
+            <a href="coder.html" class="card-link">Commencer à coder →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASTUCES DU JOUR & RACCOURCIS -->
+    <section class="section section-alt">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">Astuce du jour</p>
+          <h2>Une astuce, appliquée tout de suite</h2>
+          <div class="tips-list">
+            <article class="tip-card">
+              <span class="tag">Astuces PC</span>
+              <h3>Retrouver un fichier en deux secondes</h3>
+              <p>Appuyez sur la touche Windows et tapez le nom du fichier. La recherche s'ouvre instantanément, sans ouvrir l'explorateur.</p>
+            </article>
+
+            <article class="tip-card">
+              <span class="tag">Dépannage</span>
+              <h3>Fermer un programme qui ne répond plus</h3>
+              <p>Ctrl + Maj + Échap ouvre le gestionnaire des tâches : sélectionnez le programme bloqué puis cliquez sur Fin de tâche.</p>
+            </article>
+
+            <article class="tip-card">
+              <span class="tag">Sécurité</span>
+              <h3>Enregistrer un mot de passe solide</h3>
+              <p>Utilisez une phrase de passe de quatre mots sans lien entre eux, puis ajoutez un chiffre et un symbole. Facile à retenir, très difficile à deviner.</p>
+            </article>
+
+            <article class="tip-card">
+              <span class="tag">Organisation</span>
+              <h3>Nommer ses fichiers pour les retrouver</h3>
+              <p>Adoptez la forme <code>2026-03-14_facture_electricite</code>. La date en tête de nom trie automatiquement vos documents dans le bon ordre.</p>
+            </article>
+
+            <article class="tip-card">
+              <span class="tag">Entretien</span>
+              <h3>Vérifier l'espace disque restant</h3>
+              <p>Ouvrez Ce PC dans l'explorateur : la barre sous chaque disque indique l'espace libre. Sous 10 % restants, pensez à faire du tri.</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="shortcuts-box">
+          <h2>⌨️ Raccourcis indispensables</h2>
+          <ul class="shortcuts-list">
+            <li><span><kbd>Ctrl</kbd> + <kbd>C</kbd></span><span>Copier la sélection</span></li>
+            <li><span><kbd>Ctrl</kbd> + <kbd>V</kbd></span><span>Coller</span></li>
+            <li><span><kbd>Ctrl</kbd> + <kbd>Z</kbd></span><span>Annuler la dernière action</span></li>
+            <li><span><kbd>Alt</kbd> + <kbd>Tab</kbd></span><span>Changer de fenêtre</span></li>
+            <li><span><kbd>Windows</kbd> + <kbd>D</kbd></span><span>Afficher le bureau</span></li>
+            <li><span><kbd>Windows</kbd> + <kbd>E</kbd></span><span>Ouvrir l'explorateur de fichiers</span></li>
+            <li><span><kbd>Windows</kbd> + <kbd>L</kbd></span><span>Verrouiller l'ordinateur</span></li>
+            <li><span><kbd>Ctrl</kbd> + <kbd>Maj</kbd> + <kbd>Échap</kbd></span><span>Ouvrir le gestionnaire des tâches</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TUTORIELS À LA UNE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <p class="eyebrow">À la une</p>
+            <h2>Tutoriels à découvrir</h2>
+          </div>
+          <a href="tutoriels.html" class="btn btn-outline">Toute la bibliothèque</a>
+        </div>
+
+        <div class="cards-grid">
+          <article class="tuto-card">
+            <img src="https://cdn-cms.f-static.com/ready_uploads/media/2958908/800_5e14d42442e9a.jpg" alt="Clavier d'ordinateur" loading="lazy">
+            <div class="tuto-body">
+              <span class="tag">Astuces PC • 5 min</span>
+              <h3>10 raccourcis clavier qui changent la vie</h3>
+              <p>Gagnez plusieurs minutes chaque jour grâce aux combinaisons de touches essentielles sous Windows.</p>
+              <a href="tutoriels.html#raccourcis" class="card-link">Lire le tutoriel →</a>
+            </div>
+          </article>
+
+          <article class="tuto-card">
+            <img src="https://cdn-cms.f-static.com/ready_uploads/media/4474/800_5cda47ab96367.jpg" alt="Ordinateur portable performant" loading="lazy">
+            <div class="tuto-body">
+              <span class="tag">Entretien • 8 min</span>
+              <h3>Accélérer un PC lent en 5 étapes</h3>
+              <p>Programmes au démarrage, espace disque et mises à jour : redonnez de la fluidité à votre ordinateur.</p>
+              <a href="tutoriels.html#accelerer-pc" class="card-link">Lire le tutoriel →</a>
+            </div>
+          </article>
+
+          <article class="tuto-card">
+            <img src="https://static.s123-cdn-static-d.com/ready_uploads/media/13034504/800_655add570267b.jpg" alt="Organisation des dossiers numériques" loading="lazy">
+            <div class="tuto-body">
+              <span class="tag">Bases • 6 min</span>
+              <h3>Comprendre les fichiers et les dossiers</h3>
+              <p>Arborescence, extensions (.pdf, .jpg, .docx) et bonnes pratiques pour ne plus jamais perdre un document.</p>
+              <a href="tutoriels.html#fichiers-dossiers" class="card-link">Lire le tutoriel →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Prêt à passer au niveau suivant ?</h2>
+            <p>Comprenez d'abord comment fonctionne votre machine, puis écrivez votre première page web guidée en moins de vingt minutes.</p>
+          </div>
+          <div class="cta-buttons">
+            <a href="bases.html" class="btn btn-primary">Voir les bases</a>
+            <a href="coder.html" class="btn btn-secondary">Apprendre à coder</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-dot"></span>
+          <span>info<span class="accent">.tech</span></span>
+        </a>
+        <p class="footer-desc">Astuces concrètes pour simplifier l'usage de votre ordinateur, bases de l'informatique expliquées pas à pas et initiation au code pour les vrais débutants.</p>
+      </div>
+      <div>
+        <h3>Apprendre</h3>
+        <ul>
+          <li><a href="tutoriels.html">Tous les tutoriels</a></li>
+          <li><a href="bases.html">Bases de l'informatique</a></li>
+          <li><a href="coder.html">Apprendre à coder</a></li>
+          <li><a href="bases.html#quiz">Quiz de connaissances</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Thèmes</h3>
+        <ul>
+          <li><a href="tutoriels.html?cat=Astuces+PC">Astuces PC</a></li>
+          <li><a href="tutoriels.html?cat=Sécurité">Sécurité</a></li>
+          <li><a href="tutoriels.html?cat=Internet">Internet</a></li>
+          <li><a href="tutoriels.html?cat=Codage">Codage</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      © 2026 info.tech — Apprendre l'informatique, sans jargon.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
